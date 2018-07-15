@@ -1,0 +1,10 @@
+[Unit]
+Description=DNA Light Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/pi/git/neilsonwilson/rpi_ws281x/python/examples/dna.py -c
+
+[Install]
+WantedBy=multi-user.target
